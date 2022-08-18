@@ -5,7 +5,7 @@ const app = express();
 app.use("path of static folder");
 
 app.get('/',(req,res)=>{
-    app.sendFile(path.resolve(__dirname,"path"));
+    res.sendFile(path.resolve(__dirname,"path"));
 })
 
 app.all('*',(req,res)=>{
